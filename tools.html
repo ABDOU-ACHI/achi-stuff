@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive guide to ethical hacking tools - Nmap, Metasploit, Burp Suite, and more">
+    <title>Ethical Hacking Tools - Ethical Hacking Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Ethical Hacking Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmap.html" class="nav-link">Roadmap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="modules.html" class="nav-link">Modules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tools.html" class="nav-link active">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certification.html" class="nav-link">Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a href="practice.html" class="nav-link">Practice</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-tools"></i> Essential Hacking Tools</h1>
+            <p>Master the industry-standard tools for ethical hacking and penetration testing</p>
+        </div>
+    </section>
+
+    <!-- Tools Overview -->
+    <section class="tools-overview">
+        <div class="container">
+            <div class="tools-grid">
+                
+                <!-- Nmap -->
+                <div class="tool-card" id="nmap">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-radar"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h2>Nmap (Network Mapper)</h2>
+                            <span class="tool-category">Network Discovery & Security Auditing</span>
+                        </div>
+                        <div class="difficulty-badge intermediate">Intermediate</div>
+                    </div>
+                    <div class="tool-content">
+                        <p>Nmap is a free and open-source network discovery and security auditing tool. It's used to discover hosts and services on a computer network by sending packets and analyzing responses.</p>
+                        
+                        <div class="tool-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Host discovery and port scanning</li>
+                                <li>Service and version detection</li>
+                                <li>Operating system detection</li>
+                                <li>Scriptable with NSE (Nmap Scripting Engine)</li>
+                                <li>Firewall/IDS evasion techniques</li>
+                            </ul>
+                        </div>
+
+                        <div class="tool-commands">
+                            <h3>Essential Commands</h3>
+                            <div class="command-list">
+                                <div class="command-item">
+                                    <code>nmap -sS target.com</code>
+                                    <span>SYN stealth scan</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>nmap -sV -sC target.com</code>
+                                    <span>Version detection with default scripts</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>nmap -A target.com</code>
+                                    <span>Aggressive scan (OS detection, version, script, traceroute)</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>nmap --script vuln target.com</code>
+                                    <span>Run vulnerability detection scripts</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="use-cases">
+                            <h3>Common Use Cases</h3>
+                            <div class="use-case-grid">
+                                <div class="use-case">
+                                    <i class="fas fa-search"></i>
+                                    <h4>Network Discovery</h4>
+                                    <p>Identify live hosts and open ports on target networks</p>
+                                </div>
+                                <div class="use-case">
+                                    <i class="fas fa-server"></i>
+                                    <h4>Service Enumeration</h4>
+                                    <p>Detect running services and their versions</p>
+                                </div>
+                                <div class="use-case">
+                                    <i class="fas fa-bug"></i>
+                                    <h4>Vulnerability Scanning</h4>
+                                    <p>Identify potential security vulnerabilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metasploit -->
+                <div class="tool-card" id="metasploit">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-bomb"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h2>Metasploit Framework</h2>
+                            <span class="tool-category">Penetration Testing Platform</span>
+                        </div>
+                        <div class="difficulty-badge advanced">Advanced</div>
+                    </div>
+                    <div class="tool-content">
+                        <p>Metasploit is the world's most used penetration testing framework. It's a powerful tool for developing and executing exploit code against remote targets.</p>
+                        
+                        <div class="tool-features">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Extensive exploit database</li>
+                                <li>Payload generation and encoding</li>
+                                <li>Post-exploitation modules</li>
+                                <li>Database integration for tracking</li>
+                                <li>Web interface (Metasploit Pro)</li>
+                            </ul>
+                        </div>
+
+                        <div class="tool-commands">
+                            <h3>Essential Commands</h3>
+                            <div class="command-list">
+                                <div class="command-item">
+                                    <code>msfconsole</code>
+                                    <span>Start Metasploit console</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>search type:exploit platform:windows</code>
+                                    <span>Search for Windows exploits</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>use exploit/windows/smb/ms17_010_eternalblue</code>
+                                    <span>Use specific exploit module</span>
+                                </div>
+                                <div class="command-item">
+                                    <code>set PAYLOAD windows/meterpreter/reverse_tcp</code>
+                                    <span>Set payload for exploit</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metasploit-workflow">
+                            <h3>Typical Workflow</h3>
+                            <div class="workflow-steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Reconnaissance</h4>
+                                        <p>Gather information about the target</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Vulnerability Assessment</h4>
+                                        <p>Identify exploitable vulnerabilities</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Exploitation</h4>
+                                        <p>Execute exploit against target</p>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Post-Exploitation</h4>
+                                        <p>Maintain access and gather intelligence</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burp Suite -->
+                <div class="tool-card" id="burp">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h2>Burp Suite</h2>
+                            <span class="tool-category">Web Application Security Testing</span>
+                        </div>
+                        <div class="difficulty-badge intermediate">Intermediate</div>
+                    </div>
+                    <div class="tool-content">
+                        <p>Burp Suite is an integrated platform for performing security testing of web applications. It contains various tools that work together to support the entire testing process.</p>
+                        
+                        <div class="tool-features">
+                            <h3>Key Components</h3>
+                            <ul>
+                                <li>Proxy - Intercept and modify HTTP/HTTPS traffic</li>
+                                <li>Spider - Automated crawling of web applications</li>
+                                <li>Scanner - Automated vulnerability scanner (Pro version)</li>
+                                <li>Intruder - Customizable attack tool</li>
+                                <li>Repeater - Manual request manipulation</li>
+                                <li>Sequencer - Token randomness analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="burp-modules">
+                            <h3>Core Modules</h3>
+                            <div class="module-grid">
+                                <div class="module-item">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    <h4>Proxy</h4>
+                                    <p>Intercept and modify web traffic between browser and server</p>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-spider"></i>
+                                    <h4>Spider</h4>
+                                    <p>Automatically crawl web applications to map content</p>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-crosshairs"></i>
+                                    <h4>Intruder</h4>
+                                    <p>Perform automated attacks against web applications</p>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-redo"></i>
+                                    <h4>Repeater</h4>
+                                    <p>Manually manipulate and resend HTTP requests</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="common-attacks">
+                            <h3>Common Attack Types</h3>
+                            <div class="attack-list">
+                                <div class="attack-item">
+                                    <h4>SQL Injection Testing</h4>
+                                    <p>Test for SQL injection vulnerabilities in web forms and parameters</p>
+                                </div>
+                                <div class="attack-item">
+                                    <h4>Cross-Site Scripting (XSS)</h4>
+                                    <p>Identify reflected, stored, and DOM-based XSS vulnerabilities</p>
+                                </div>
+                                <div class="attack-item">
+                                    <h4>Authentication Bypass</h4>
+                                    <p>Test for weak authentication mechanisms and session handling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Tools -->
+                <div class="tool-card" id="additional-tools">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-toolbox"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h2>Additional Essential Tools</h2>
+                            <span class="tool-category">Complete Toolkit</span>
+                        </div>
+                        <div class="difficulty-badge various">Various</div>
+                    </div>
+                    <div class="tool-content">
+                        <div class="additional-tools-grid">
+                            
+                            <div class="mini-tool-card">
+                                <div class="mini-tool-header">
+                                    <i class="fas fa-eye"></i>
+                                    <h3>Wireshark</h3>
+                                </div>
+                                <p>Network protocol analyzer for deep packet inspection and traffic analysis.</p>
+                                <div class="tool-tags">
+                                    <span class="tag">Network Analysis</span>
+                                    <span class="tag">Packet Capture</span>
+                                </div>
+                            </div>
+
+                            <div class="mini-tool-card">
+                                <div class="mini-tool-header">
+                                    <i class="fab fa-linux"></i>
+                                    <h3>Kali Linux</h3>
+                                </div>
+                                <p>Debian-based Linux distribution with pre-installed penetration testing tools.</p>
+                                <div class="tool-tags">
+                                    <span class="tag">Operating System</span>
+                                    <span class="tag">Tool Suite</span>
+                                </div>
+                            </div>
+
+                            <div class="mini-tool-card">
+                                <div class="mini-tool-header">
+                                    <i class="fas fa-shield-virus"></i>
+                                    <h3>OWASP ZAP</h3>
+                                </div>
+                                <p>Free security testing proxy for finding vulnerabilities in web applications.</p>
+                                <div class="tool-tags">
+                                    <span class="tag">Web Security</span>
+                                    <span class="tag">Open Source</span>
+                                </div>
+                            </div>
+
+                            <div class="mini-tool-card">
+                                <div class="mini-tool-header">
+                                    <i class="fas fa-key"></i>
+                                    <h3>John the Ripper</h3>
+                                </div>
+                                <p>Password cracking tool supporting many cipher and hash types.</p>
+                                <div class="tool-tags">
+                                    <span class="tag">Password Cracking</span>
+                                    <span class="tag">Hash Analysis</span>
+                                </div>
+                            </div>
+
+                            <div class="mini-tool-card">
+                                <div class="mini-tool-header">
+                                    <i class="fas fa-wifi"></i>
+                                    <h3>Aircrack-ng</h3>
+                                </div>
+                                <p>Suite of tools to assess WiFi network security and crack WEP/WPA keys.</p>
+                                <div class="tool-tags">
+                                    <span class="tag">Wireless Security</span>
+                                    <span class="tag">WiFi Testing</span>
+                                </div>
+                            </div>
+
+                            <div class="mini-tool-card">
+                                <div class="mini-tool-header">
+                                    <i class="fas fa-database"></i>
+                                    <h3>SQLMap</h3>
+                                </div>
+                                <p>Automated tool for detecting and exploiting SQL injection flaws.</p>
+                                <div class="tool-tags">
+                                    <span class="tag">SQL Injection</span>
+                                    <span class="tag">Database Security</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Installation Guide -->
+    <section class="installation-guide">
+        <div class="container">
+            <h2>Installation & Setup Guide</h2>
+            <div class="installation-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="kali">Kali Linux</button>
+                    <button class="tab-btn" data-tab="ubuntu">Ubuntu/Debian</button>
+                    <button class="tab-btn" data-tab="windows">Windows</button>
+                    <button class="tab-btn" data-tab="macos">macOS</button>
+                </div>
+                
+                <div class="tab-content active" id="kali">
+                    <h3>Kali Linux Setup</h3>
+                    <p>Most tools come pre-installed with Kali Linux. Update your system regularly:</p>
+                    <div class="code-block">
+                        <code>
+sudo apt update && sudo apt upgrade -y<br>
+sudo apt install -y metasploit-framework nmap wireshark burpsuite
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="ubuntu">
+                    <h3>Ubuntu/Debian Installation</h3>
+                    <p>Install tools individually on Ubuntu/Debian systems:</p>
+                    <div class="code-block">
+                        <code>
+# Install Nmap<br>
+sudo apt install nmap<br><br>
+# Install Metasploit<br>
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="windows">
+                    <h3>Windows Installation</h3>
+                    <p>Some tools have Windows versions available:</p>
+                    <div class="code-block">
+                        <code>
+# Download Nmap for Windows from: https://nmap.org/download.html<br>
+# Download Burp Suite Community from: https://portswigger.net/burp<br>
+# Consider using WSL2 with Kali Linux for better compatibility
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="macos">
+                    <h3>macOS Installation</h3>
+                    <p>Use Homebrew to install security tools on macOS:</p>
+                    <div class="code-block">
+                        <code>
+# Install Homebrew first: https://brew.sh/<br>
+brew install nmap wireshark<br>
+brew install --cask burp-suite
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ethical Hacking Academy</h3>
+                    <p>Empowering cybersecurity professionals through ethical hacking education.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tool Resources</h3>
+                    <ul>
+                        <li><a href="https://nmap.org" target="_blank">Official Nmap Documentation</a></li>
+                        <li><a href="https://metasploit.com" target="_blank">Metasploit Framework</a></li>
+                        <li><a href="https://portswigger.net/burp" target="_blank">Burp Suite Learning</a></li>
+                        <li><a href="https://owasp.org/www-project-zap/" target="_blank">OWASP ZAP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ethical Hacking Academy. For educational purposes only. Use responsibly and ethically.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Tab functionality for installation guide
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.tab;
+                
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                btn.classList.add('active');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

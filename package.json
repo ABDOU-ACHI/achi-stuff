@@ -1,0 +1,41 @@
+{
+  "name": "ethical-hacking-academy",
+  "version": "1.0.0",
+  "description": "Comprehensive ethical hacking and penetration testing education platform with Red Hat certification pathways",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Build process would go here'",
+    "test": "echo 'Tests would go here'",
+    "deploy": "echo 'Deployment script would go here'"
+  },
+  "keywords": [
+    "ethical-hacking",
+    "penetration-testing",
+    "cybersecurity",
+    "red-hat",
+    "education",
+    "security",
+    "kali-linux",
+    "metasploit",
+    "nmap",
+    "burp-suite"
+  ],
+  "author": "Ethical Hacking Academy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ethical-hacking-academy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ethical-hacking-academy/issues"
+  },
+  "homepage": "https://github.com/yourusername/ethical-hacking-academy#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
